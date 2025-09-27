@@ -258,6 +258,17 @@ function initContactForm() {
             alert("There was an error sending your message. Please try again.");
         } finally {
             submitBtn.classList.remove('loading');
+             setTimeout(()=>{
+                         
+                document.getElementById('name').value ="";
+                document.getElementById('email').value ="";
+                document.getElementById('subject').value ="";
+                document.getElementById('message').value ="";
+
+     
+
+             }, 2000); // Auto-close modal after 3 seconds
+
         }
     });
 }
@@ -309,7 +320,7 @@ window.addEventListener('scroll', () => {
     const parallax = document.querySelector('.hero');
     
     if (parallax) {
-        const speed = scrolled * 0.5;
+        const speed = scrolled * 0.1;
         parallax.style.transform = `translateY(${speed}px)`;
     }
 });
