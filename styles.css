@@ -802,7 +802,6 @@ body {
 
 .project-image {
     position: relative;
-    height: 250px;
     overflow: hidden;
 }
 
@@ -1301,3 +1300,111 @@ body {
         animation: none;
     }
 }
+
+/* ----------- Extra Small Screen Fix (360px & 320px) ------------ */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .floating-card {
+        padding: 1rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+
+    .contact-card, 
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .project-card {
+        margin: 0 5px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+/* -------- Tablet Fix (max-width: 992px) -------- */
+@media (max-width: 992px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-container, 
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-content {
+        gap: 2rem;
+    }
+}
+
+
