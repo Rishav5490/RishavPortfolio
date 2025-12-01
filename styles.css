@@ -7,9 +7,9 @@
 
 :root {
     /* Color System */
-    --primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --primary: linear-gradient(135deg, #ea66e1 0%, #764ba2 100%);
+    --secondary: linear-gradient(135deg, #f8053e 0%, #f557eb 100%);
+    --accent: linear-gradient(135deg, #0885f2 0%, #00f2fe 100%);
     --success: #10b981;
     --warning: #f59e0b;
     --error: #ef4444;
@@ -84,7 +84,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #022ef0, #f504c8);
     border-radius: 10px;
 }
 
